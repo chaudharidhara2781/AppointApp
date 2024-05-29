@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration style.css">
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form action="connect.php" method="post" class="login-email">
+      <div class="input-box">
+        <input type="text" placeholder="Enter your name" name="Fullname" id="Fullname" required>
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Enter your email" name="Email" id="Email" required>
+      </div>
+	   <div class="input-box">
+	  <input type="text" placeholder="Enter username" name="Username" id="Username" required>
+	  </div>
+
+		<div class="text">
+	  <select id="Gender" name="Gender"  required>
+			<option value="" disabled selected color="#FF0000">Select Gender</option>
+			<option value="" name="Gender" value="f">Female</option>
+			<option value="" name="Gender" value="m">Male</option>
+			<option value="" name="Gender" value="o">Other</option>
+			</select>
+	  <div class="text1">
+	  <select name="City" id="City"  required>
+			<option value="" disabled selected color="#FF0000">Select City</option>
+			<option value="">Ahmedabad</option>
+			<option value="">Surat</option>
+			<option value="">Baroda</option>
+			<option value="">Rajkot</option>
+			</select>
+	</div>
+      <div class="input-box">
+        <input type="Password" placeholder="Create password" name="Password" required>
+      </div>
+      <div class="input-box">
+        <input type="Password" placeholder="Confirm password" required>
+      </div>
+     
+      <div class="input-box button">
+        <input type="Submit" name="Submit" value="Register Now">
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href="landing page.html" >Login now</a></h3>
+      </div>
+	  
+    </form>
+  </div>
+  
+</body>
+</html>

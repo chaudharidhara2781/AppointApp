@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #34495e;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #34495e;
+  color: white;
+}
+.center 
+{
+  color:#f2f2f2;
+  padding: 20px 0;
+  text-align: center;
+}
+.here{
+  color: white;
+}
+input{
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  outline: none;
+}
+button{
+  text-align: center;
+  margin: 10px;
+  align-items: center;
+  background-color:   white;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  color: #1abc9c;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+button:hover{
+  cursor: pointer;
+  color: #f02eaa66;
+  box-shadow: #f02eaa66 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.cont{
+  align-items: center;
+  background-color: white;
+  width: 200px;
+}
+</style>
+<title> Landing Page </title>
+</head>
+    
+    <body bgcolor="#34495e">
+<div>
+<div class="topnav">
+  <a class="active" href="landing page.html">Home</a>
+  <a href="contact us.html">Contact</a>
+  <a href="about us.html">About</a>
+</div>
+
+
+
+	<div class="center">
+		<center>
+			<h1 style="font-size:80px;color:white"><b>Welcome To AppointApp</b></h1>
+			<h1 style="color:#1abc9c;"> We make managing appointments easier </h1>
+			<h3 style="color:whitesmoke;"> Please, log in before booking an appointment </h3>
+		</center>
+
+	<form action="appointment.html" method="post">
+     <label for="uname"><b>Username :</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+    <label for="psw"><b>Password :</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+    <button type="submit">LOGIN</button>
+	<button type="reset">CANCEL</button>
+
+	
+	</div>
+
+</form>
+
+<h2 style="text-align:center" >don't have an account? register <u><a class="here" href = "registration.html">here.</a></u></h2>
+	<form method="get" action="registration.html" style="text-align:center">
+    
+</form> 
+</div>
+
+</body>
+</html>

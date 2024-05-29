@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+
+.center 
+{
+  padding: 20px 0;
+  text-align: center;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+input[type=text] {
+  bgcolor: #f05959;
+  width: 100%;
+  length: 10%
+  padding: 12px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid yellow;
+}
+input[type=email] {
+  width: 100%;
+  length: 10%
+  padding: 12px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid yellow;
+}
+
+</style>
+<title> Registration form </title>
+</head>
+<body bgcolor="#f05959">
+<table class="center">
+<div class="center">
+    <th><td><h2 style="color:white;">Service Provider's Registration Form</h2></td></th>
+
+    <form action="next.html" method="POST"> 
+	
+		<th>
+			<tr><td>CHOOSE YOUR SERVICE </td>
+			<td><select name="BUSSINESS" id="BUSSINESS" >
+				<option value=""></option>
+				<option value="">Doctor</option>
+				<option value="">Lawyer</option>
+				<option value="">Salon</option>
+				<option value="">Phycologist</option>
+				<option value="">Career Counsellor</option>
+				<option value="">Real estate advisor</option>
+				<option value="">Investment Advisor</option>
+				<option value="">Crypto advisor</option>
+				<option value="">CA</option>
+				</select>
+			</td></tr>
+				<tr><td>Service Provider's Name: </td><td> <input type="text" name="spname"> </td><tr>
+				<tr><td>Enter details about your service: </td><td> <input type="text" name="details"> </td><tr>
+				<tr><td>Email: </td><td> <input type="email" name="email"> </td><tr>
+				<tr><td>Contact: </td><td> <input type="text" name="contact"> </td><tr>
+				<tr><td>address: </td><td> <textarea name="address"> </textarea></td><tr>
+				<tr><td>select yout working hours:</td><td> <input type="time" id="appt" name="appt"> to <input type="time" id="appt" name="appt"></td></tr>
+				<tr><td>City:</td>
+					<td><select name="ct" id="ct" >
+						<option value=""></option>
+						<option value="">Ahmedabad</option>
+						<option value="">Surat</option>
+						<option value="">Baroda</option>
+						</select>
+					</td>
+				</tr>
+				<tr><td>Password: </td> <td> <input type="password" name="password" value=""></td></tr>
+				<tr><td></td><td><input type="reset" name="clear" value="clear" ></td></tr>
+				<tr><td></td><td><button type="submit">Submit</button></td></tr>
+			
+		
+		</th>
+
+    </form>
+</table>
+</div>
+</body>
+</html>

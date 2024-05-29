@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="apoointment style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var subjectObject = {
+  "Doctor": {
+    "Gynecologist": ["Dr.hena Desai", "Dr.Rohinikumar", "Dr.Priti dave", "Dr.Radhika joshi"],
+    "Orthopediction": ["Dr.manan vora", "Dr.Rohan Jani", "Dr.Dev Patel", "Dr.Himani Kapoor"],
+    "ENT": ["Dr.Anil Raval", "Dr.Nirmal Patel", "Dr.Juhi Mehta", "Dr.Siddhi Rathod"]    
+  },
+  "Lawyer": {
+    "Interllectual property lawyer": ["Adv.RG thakkar", "Adv.Anoj singh", "Adv. Apexa Chaudhari"],
+    "Public interest Lawyer": ["Adv.Rohi Patel", "Adv.Aditi Rajput", "Adv.Rohan Sharma"],
+    "Family Lawyer":["Adv.Rudra Patel","Adv.Vijay Prajapati","Adv.Rudra Vora"]
+  },
+  "Salon": {
+    "Beauty Parlor for female": ["brides pride", "royal", "heaven"],
+    "Hair Salon for Male": ["Cabello", "A-one", "aavkar"],
+    "Unisex Salons":["Embelish","Delux","Sunglow"]
+}
+
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+</script>
+</head>   
+<body>
+
+<h1>Book Your Appointment</h1>
+<div class="container">
+<form name="form1" id="form1" action="confirmation.html">
+Book appointment with: <select name="subject" id="subject">
+    <option value="" selected="selected"></option>
+  </select>
+  <br><br>
+category: <select name="topic" id="topic">
+    <option value="" selected="selected">Please select category first</option>
+  </select>
+  <br><br>
+Specialist: <select name="chapter" id="chapter">
+    <option value="" selected="selected">Please select specialist first</option>
+  </select>
+  <br>
+Date: <input type="date" class="date"><span></span>
+Time: <input type="time" class="time">
+  <br><br>
+  <input type="submit" value="Submit">  
+</form>
+</div>
+</body>
+</html>
